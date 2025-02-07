@@ -27,6 +27,7 @@ export const GlobalStyles = createGlobalStyle`
     body{
         margin: 0;
         font-family: "Roboto", serif;
+        background-color: #F0F9FF;
     }
 
 `;

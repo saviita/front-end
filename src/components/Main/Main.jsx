@@ -1,69 +1,96 @@
-import { StyledTopSection } from './main.styles';
+import {
+	StyledPrimaryButton,
+	StyledSecondaryButton
+} from '../Button/button.styles';
+import {
+	StyledBigTitle,
+	StyledDivButtons,
+	StyledHeaderImg,
+	StyledHeaderText,
+	StyledRoadArticle,
+	StyledArticleImg,
+	StyledArticleText,
+	StyledArticleTitle,
+	StyledTopSection,
+	StyledWaveHeader,
+	StyledProgrammingArticle,
+	StyledWorkArticle,
+	StyledDiscordSection,
+	StyledDiscordLogo
+} from './main.styles';
 
 const Main = () => {
 	return (
 		<main>
 			<StyledTopSection>
 				<div>
-					<h1>Aprende FrontEnd</h1>
-					<p>
+					<StyledBigTitle>Aprende FrontEnd</StyledBigTitle>
+					<StyledHeaderText>
 						Aprender a programar es más efectivo cuando sigues un camino claro y
 						estructurado. Aquí encontrarás retos diseñados para guiarte paso a
 						paso que pondrán a prueba tus habilidades.
-					</p>
-					<div>
-						<button>Empieza a aprender</button>
-						<button>Ver desafíos</button>
-					</div>
+					</StyledHeaderText>
+					<StyledDivButtons>
+						<StyledPrimaryButton>Empieza a aprender</StyledPrimaryButton>
+						<StyledSecondaryButton>Ver desafíos</StyledSecondaryButton>
+					</StyledDivButtons>
 				</div>
-				<img src='/assets/images/hero-home.svg' alt='' />
-				<img src='/assets/images/header-wave.svg' alt='' />
+				<StyledHeaderImg src='/assets/images/hero-home.svg' alt='' />
+				<StyledWaveHeader src='/assets/images/header-wave.svg' alt='' />
 			</StyledTopSection>
 			<section>
-				<article>
-					<img src='/assets/images/home-road.svg' alt='' />
+				<StyledRoadArticle>
+					<StyledArticleImg src='/assets/images/home-road.svg' alt='' />
 					<div>
-						<h2>Un Camino Claro hacia el Éxito</h2>
-						<p>
+						<StyledArticleTitle>
+							Un Camino Claro hacia el Éxito
+						</StyledArticleTitle>
+						<StyledArticleText>
 							Olvídate del caos de aprender al azar. Aquí te guiamos con retos
 							organizados de forma progresiva, dándote una ruta para que domines
 							cada concepto antes de pasar al siguiente nivel.
-						</p>
+						</StyledArticleText>
 					</div>
-				</article>
-				<article>
+				</StyledRoadArticle>
+
+				<StyledProgrammingArticle>
+					<StyledArticleImg src='/assets/images/home-programming.svg' alt='' />
 					<div>
-						<h2>Construye Proyectos Reales</h2>
-						<p>
+						<StyledArticleTitle>Construye Proyectos Reales</StyledArticleTitle>
+						<StyledArticleText>
 							Aprender es importante, pero construir es lo que marca la
 							diferencia. Aquí encontrarás proyectos diseñados para simular
 							situaciones reales
-						</p>
+						</StyledArticleText>
 					</div>
-					<img src='/assets/images/home-programming.svg' alt='' />
-				</article>
-				<article>
-					<img src='/assets/images/home-work.svg' alt='' />
+				</StyledProgrammingArticle>
+
+				<StyledWorkArticle>
+					<StyledArticleImg src='/assets/images/home-work.svg' alt='' />
 					<div>
-						<h2>Desarrolla Habilidades Técnicas </h2>
-						<p>
+						<StyledArticleTitle>
+							Desarrolla Habilidades Técnicas{' '}
+						</StyledArticleTitle>
+						<StyledArticleText>
 							Aquí no se trata de hacer ejercicios sin sentido. Cada reto tiene
 							un propósito claro, preparándote para resolver problemas reales y
 							construir proyectos que realmente importen.
-						</p>
+						</StyledArticleText>
 					</div>
-				</article>
+				</StyledWorkArticle>
 			</section>
-			<section>
-				<img src='/assets/images/icons/discord-logo.svg' alt='' />
-				<h2>Programa en comunidad</h2>
-				<p>
-					Tenemos un servidor de discord donde podrás hablar con gente que se
-					está enfrentando a los mismos retos que tu, pregunta dudas, comparte
-					tu código y conoce gente que está al mismo nivel que tú.
-				</p>
-				<button>Unirse a Discord</button>
-			</section>
+			<StyledDiscordSection>
+				<StyledDiscordLogo src='/assets/images/icons/discord-logo.svg' alt='' />
+				<div>
+					<h2>Programa en comunidad</h2>
+					<p>
+						Tenemos un servidor de discord donde podrás hablar con gente que se
+						está enfrentando a los mismos retos que tu, pregunta dudas, comparte
+						tu código y conoce gente que está al mismo nivel que tú.
+					</p>
+					<StyledPrimaryButton>Unirse a Discord</StyledPrimaryButton>
+				</div>
+			</StyledDiscordSection>
 		</main>
 	);
 };

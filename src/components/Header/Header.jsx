@@ -1,12 +1,12 @@
-import { StyledHeader, StyledLogo, StyledButton } from './header.styles';
+import { StyledHeader, StyledLogo, StyledLogIn } from './header.styles';
 
 const Header = () => {
 	return (
 		<StyledHeader>
 			<a href=''>
-				<StyledLogo src='/public/assets/images/icons/logo.svg' alt='' />
+				<StyledLogo src='/assets/images/icons/logo.svg' alt='' />
 			</a>
-			<StyledButton>Iniciar sesión</StyledButton>
+			<StyledLogIn>Iniciar sesión</StyledLogIn>
 		</StyledHeader>
 	);
 };
