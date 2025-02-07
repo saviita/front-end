@@ -28,4 +28,17 @@ font-size: 16px;
 font-weight: 700;
 `
 
-export {StyledPrimaryButton, StyledSecondaryButton}
+const StyledDiscordButton = styled.button`
+display: flex;
+align-items: center;
+width: max-content;
+padding: 0.75rem;
+background-color: #f0f9ff;
+color: #2b3dfe;
+border: none;
+border-radius: 8px;
+font-size: 16px;
+font-weight: 700;
+`
+
+export {StyledPrimaryButton, StyledSecondaryButton, StyledDiscordButton}

@@ -1,6 +1,7 @@
 import {
 	StyledPrimaryButton,
-	StyledSecondaryButton
+	StyledSecondaryButton,
+	StyledDiscordButton
 } from '../Button/button.styles';
 import {
 	StyledBigTitle,
@@ -16,7 +17,9 @@ import {
 	StyledProgrammingArticle,
 	StyledWorkArticle,
 	StyledDiscordSection,
-	StyledDiscordLogo
+	StyledDiscordLogo,
+	StyledDiscordTitle,
+	StyledDiscordText
 } from './main.styles';
 
 const Main = () => {
@@ -82,13 +85,13 @@ const Main = () => {
 			<StyledDiscordSection>
 				<StyledDiscordLogo src='/assets/images/icons/discord-logo.svg' alt='' />
 				<div>
-					<h2>Programa en comunidad</h2>
-					<p>
+					<StyledDiscordTitle>Programa en comunidad</StyledDiscordTitle>
+					<StyledDiscordText>
 						Tenemos un servidor de discord donde podrás hablar con gente que se
 						está enfrentando a los mismos retos que tu, pregunta dudas, comparte
 						tu código y conoce gente que está al mismo nivel que tú.
-					</p>
-					<StyledPrimaryButton>Unirse a Discord</StyledPrimaryButton>
+					</StyledDiscordText>
+					<StyledDiscordButton>Unirse a Discord</StyledDiscordButton>
 				</div>
 			</StyledDiscordSection>
 		</main>

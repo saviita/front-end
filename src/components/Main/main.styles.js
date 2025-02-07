@@ -31,9 +31,9 @@ display: none;
 
 const StyledWaveHeader = styled.img`
 position: absolute;
-width: 100%;
-bottom: -70px;
+bottom: 1px;
 left: 0;
+translate: 0 100%;
 `
 
 const StyledRoadArticle = styled.article`
@@ -86,14 +86,26 @@ const StyledDiscordSection = styled.section`
 display: flex;
 flex-direction: column;
 align-items: center;
+justify-content: center;
 background-color: #2B3DFE;
+color: white;
 text-align: center;
+padding: 2rem 2rem 5rem;
+
 `
 
 const StyledDiscordLogo = styled.img`
 max-width: 200px;
 `
 
+const StyledDiscordTitle = styled.h2`
+font-size: 32px;
+`
+
+const StyledDiscordText = styled.p`
+font-size: 20px;
+line-height: 30px;
+`
 export {StyledTopSection, 
     StyledBigTitle, 
     StyledHeaderText, 
@@ -107,4 +119,6 @@ export {StyledTopSection,
     StyledProgrammingArticle,
     StyledWorkArticle,
     StyledDiscordSection, 
-StyledDiscordLogo}
+    StyledDiscordLogo,
+    StyledDiscordTitle,
+    StyledDiscordText}
