@@ -1,4 +1,4 @@
-import { StyledPrimaryButton } from '../../components/Button/button.styles';
+import CardSection from '../../components/Cards-section/Cards-section';
 import {
 	StyledBigTitle,
 	StyledHeaderImg,
@@ -23,15 +23,7 @@ const Challenge = () => {
 				/>
 				<StyledWaveHeader src='/assets/images/header-wave.svg' alt='' />
 			</StyledTopSection>
-
-			<section>
-				<div>
-					<StyledPrimaryButton>Todos los retos</StyledPrimaryButton>
-					<button>HTML - CSS</button>
-					<button>JavaScript</button>
-				</div>
-				<div></div>
-			</section>
+			<CardSection />
 		</main>
 	);
 };

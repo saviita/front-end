@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
 	StyledPrimaryButton,
 	StyledSecondaryButton,
@@ -34,8 +35,12 @@ const Main = () => {
 						paso que pondrán a prueba tus habilidades.
 					</StyledHeaderText>
 					<StyledDivButtons>
-						<StyledPrimaryButton>Empieza a aprender</StyledPrimaryButton>
-						<StyledSecondaryButton>Ver desafíos</StyledSecondaryButton>
+						<Link to='/challenge'>
+							<StyledPrimaryButton>Empieza a aprender</StyledPrimaryButton>
+						</Link>
+						<Link to='/challenge'>
+							<StyledSecondaryButton>Ver desafíos</StyledSecondaryButton>
+						</Link>
 					</StyledDivButtons>
 				</div>
 				<StyledHeaderImg src='/assets/images/hero-home.svg' alt='' />
@@ -91,8 +96,8 @@ const Main = () => {
 						está enfrentando a los mismos retos que tu, pregunta dudas, comparte
 						tu código y conoce gente que está al mismo nivel que tú.
 					</StyledDiscordText>
-					<StyledDiscordButton>Unirse a Discord</StyledDiscordButton>
 				</div>
+				<StyledDiscordButton>Unirse a Discord</StyledDiscordButton>
 			</StyledDiscordSection>
 		</main>
 	);
